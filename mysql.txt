@@ -1,0 +1,12 @@
+CREATE DATABASE crypto_portfolio_db;
+CREATE TABLE portfolio (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    coin_name VARCHAR(50),
+    units_owned DECIMAL(10, 2),
+    purchase_price DECIMAL(10, 2),
+    current_price DECIMAL(10, 2),
+    total_value DECIMAL(10, 2),
+    transaction_type VARCHAR(10),
+    transaction_date DATE,
+    profit_loss DECIMAL(10, 2) NULL
+);
